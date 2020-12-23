@@ -98,3 +98,81 @@ img {
 
     }
 }
+
+// Home Sections
+#home {
+    &-a {
+        .specials {
+            margin-top: 3rem;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(4, 1fr);
+
+            .fas {
+                color: $main-color;
+                padding-bottom: 0.4rem;
+            }
+        }
+    }
+
+    //Home Section B
+    // &-b {
+    //     .stats {
+    //         margin: 1rem;
+    //         display: grid;
+    //         grid-gap: 1rem;
+    //         grid-template-columns: repeat(4, 1fr);
+    //         div:nth-child(odd) {
+    //             border: 1px solid grey;
+    //             padding: 3rem;
+    //             background-color: $medium-color;
+    //             ul {
+    //                 line-height: 2;
+    //             }
+    //         }
+
+    //         div:nth-child(even) {
+    //             border: 1px solid grey;
+    //             padding: 3rem;
+    //             background-color: $light-color;
+    //             ul {
+    //                 line-height: 2;
+    //             }
+    //         }
+    //     }
+    // }
+
+    &-b {
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            li {
+                line-height: 2;
+
+                &.stats-title {
+                    font-size: 1.5rem;
+                }
+
+                &.stats-number {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+
+            div{
+                padding: 3rem 0;
+                &:nth-child(odd) {
+                    background-color: $light-color;
+                }
+
+                &:nth-child(even) {
+                    background-color: $medium-color;
+                }
+            }
+
+            
+
+        }
+    }
+}
